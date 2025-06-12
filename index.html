@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Meine Honig-Webseite</title>
+  <meta name="description" content="Honig-Manufaktur Sporrer - Regionaler Honig aus eigener Imkerei.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      background-color: #fff8e1;
+    }
+
+    header {
+      background-color: #ffb300;
+      color: white;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ffa000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #ff8f00;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+    }
+
+    section {
+      display: none;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: opacity 0.5s ease;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 0.75rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    form {
+      max-width: 500px;
+      margin-top: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 0.75rem;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.4rem;
+      margin-top: 0.4rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #ffa000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    button:hover {
+      background-color: #ff8f00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Willkommen bei der Honig-Manufaktur Sporrer</h1>
+  </header>
+
+  <nav>
+    <a href="#start">Startseite</a>
+    <a href="#geschichte">Geschichte</a>
+    <a href="#produkte">Produkte</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <main>
+    <section id="start">
+      <h2>Startseite</h2>
+      <p>Willkommen auf unserer kleinen, aber feinen Honig-Seite!</p>
+      <img src="Biene2.jpg" alt="Biene auf Blume">
+    </section>
+
+    <section id="geschichte">
+      <h2>Unsere Geschichte</h2>
+      <p>
+         Was einst mit zwei Völkern begann, ist heute zu einem festen Bestandteil unseres Familienlebens geworden. Die Liebe zur Natur und das faszinierende Zusammenspiel in einem Bienenvolk haben uns dazu inspiriert, mit der Imkerei zu beginnen – zunächst ganz klein, mit nur zwei Bienenvölkern.
+
+        Über die Jahre ist aus dieser Leidenschaft ein echtes Familienhobby geworden. Mit viel Geduld, Neugier und einem wachsenden Verständnis für die Bedürfnisse der Bienen wuchs auch unsere kleine Imkerei. Inzwischen kümmern wir uns um acht Völker – jedes einzelne davon ein kleines Wunderwerk der Natur.
+
+        Zweimal im Jahr, in den Monaten Juni/Juli sowie August/September, ernten wir den Honig, den unsere Bienen aus dem Nektar umliegender Blüten und Pflanzen sammeln. Der Honig schmeckt dabei jedes Jahr ein wenig anders – je nachdem, welche Blüten in der Umgebung zur jeweiligen Zeit besonders reichlich vorhanden sind. So spiegelt jedes Glas Honig ein Stück Natur und Jahreszeit wider.
+
+        Für uns ist die Imkerei mehr als nur ein Zeitvertreib. Sie verbindet uns als Familie, lässt uns die Natur bewusster erleben und gibt uns die Möglichkeit, einen kleinen, aber wichtigen Beitrag zum Schutz der Bienen zu leisten. Denn Bienen sind nicht nur Honiglieferanten – sie sind zentrale Bestäuber für unsere Pflanzen und damit unverzichtbar für das ökologische Gleichgewicht.
+
+        Unsere Bienengeschichte zeigt: Aus einer kleinen Idee kann etwas Wundervolles entstehen – wenn man mit Herz, Verstand und Geduld dabei ist.
+      </p>
+      <img src="geschichte-honig.jpg" alt="Honig fließt in eine Schale">
+    </section>
+
+    <section id="produkte" style="
+        background: url('produkte-honig.jpg') no-repeat center center; 
+        background-size: cover;
+        padding: 2rem; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    ">
+      <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Unsere Produkte</h2>
+      <ul style="color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">
+        <li>Blütenhonig – mild und aromatisch</li>		
+        <li>Cremehonig – kräftig im Geschmack</li>
+        <li>250 gramm kosten 4€ – 1Kg kostet 13€</li>
+        <li>Pro Glas werden 1€ Pfand verrechnet</li>
+        <li>Erhältlich nur direkt bei uns auf Anfrage</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Hast du Fragen zu unseren Produkten oder möchtest du Honig bestellen? Schreib uns gerne!</p>
+      <form action="https://formspree.io/f/https://formspree.io/f/xdkzgwvj" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Tel:</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="nachricht">Nachricht:</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function zeigeAktiveSeite() {
+      const hash = window.location.hash.substring(1) || 'start';
+      document.querySelectorAll('main section').forEach(sec => {
+        sec.classList.toggle('active', sec.id === hash);
+      });
+
+      document.querySelectorAll('nav a').forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + hash);
+      });
+    }
+
+    window.addEventListener('hashchange', zeigeAktiveSeite);
+    window.addEventListener('load', zeigeAktiveSeite);
+  </script>
+
+</body>
+</html>
